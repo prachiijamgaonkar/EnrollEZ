@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Admission_Page3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvadpagethree_approvalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvadpagethree_approvalinfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. Contact Details"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone : (Area / STD Code)"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number\nStudent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1)"
+                        android:textSize="20sp"
+                        android:layout_weight="9"/>
+
+                    <EditText
+                        android:id="@+id/etad_mobilenostu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2)"
+                        android:textSize="20sp"
+                        android:layout_weight="9"/>
+
+                    <EditText
+                        android:id="@+id/etad_mobilenostu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Nmber \nFather / Guardian / Mother"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1)"
+                        android:textSize="20sp"
+                        android:layout_weight="9"/>
+
+                    <EditText
+                        android:id="@+id/etad_mobilenofat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2)"
+                        android:textSize="20sp"
+                        android:layout_weight="9"/>
+
+                    <EditText
+                        android:id="@+id/etad_mobilenofat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. Declaration by Student"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/declaration_by_student"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <CheckBox
+                    android:id="@+id/cbad_iagree1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I Agree"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DECLARATION TO BE SIGNED BY CANDIDATES PARENT OR GUARDIAN"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I hereby declare that:"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string1"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string2"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string3"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string4"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string5"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string6"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string7"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string8"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string9"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Place"
+                        android:textSize="20sp"
+                        android:layout_weight="4"/>
+
+                    <EditText
+                        android:id="@+id/etad_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="20sp"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/tvadpage3_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cbad_iagree2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I Agree"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp" />
+
+<!--                &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Student Signature"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnad_SelectImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Image"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/ivad_Sign1"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnad_UploadImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parent Signature"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnad_SelectImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Image"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/ivad_Sign2"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnad_UploadImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnad_Submit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

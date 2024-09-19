@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Backlog_Exam_Page1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvbkexpageone_approvalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvbkexpageone_approvalinfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Year"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvbkex_AdmissionYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2023-24"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Examination"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spibkex_NameExamination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <RadioGroup
+                    android:id="@+id/rdbkex_radiostudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="?attr/editTextBackground">
+                    <RadioButton
+                        android:id="@+id/radioRegulerStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reguler Student"
+                        android:layout_weight="1" />
+                    <RadioButton
+                        android:id="@+id/radioExStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ex-Student"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programme"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spibkex_Programme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <EditText
+                    android:id="@+id/etbkex_ProgrammeDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Department"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semester"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spibkex_Semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Registration No."
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_StudentRegNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(First Name)  (Fathers Name)  (Surname)" />
+
+                <EditText
+                    android:id="@+id/etbkex_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Students's ABC ID"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Bank of Credits" />
+
+                <EditText
+                    android:id="@+id/etbkex_StudentABC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mother's Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_MotherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvbkex_dateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correspondence Address with Pincode"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No. (Parent)"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_MobileNoParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No. (Student)"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_MobileNoStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="University Enrolment No."
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etbkex_EnrolmentNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Courses in which the candidate want to appear"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Partical course should be specified separately." />
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 01"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_one_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_one_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_one_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_one_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 02"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_two_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_two_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_two_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_two_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 03"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_three_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_three_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_three_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_three_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 04"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_four_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_four_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_four_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_four_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 05"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_five_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_five_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_five_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_five_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 06"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_six_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_six_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_six_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_six_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 07"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_seven_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_seven_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_seven_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_seven_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 08"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_eight_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_eight_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_eight_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_eight_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 09"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_nine_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_nine_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_nine_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_nine_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llbkex_SrNo10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sr. No. 10"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Code"
+                        android:textSize="20sp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/etbkex_ten_CourseCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Name"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_ten_CourseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Theroy/Practical"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/spibkex_ten_TheroyPractical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="0.7"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etbkex_ten_Credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+            </LinearLayout>
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Open Elective"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="10dp"/>-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spibkex_OpenElective"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:background="?attr/editTextBackground"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Program Elective"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginTop="10dp"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etbkex_ProgramElective1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="1)"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etbkex_ProgramElective2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="2)"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etbkex_ProgramElective3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="3)"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etbkex_ProgramElective4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="4)"-->
+<!--                    android:textSize="20sp" />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnbkex_Submit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

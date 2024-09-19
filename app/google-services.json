@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "600392066710",
+    "firebase_url": "https://online-addmission-5d57d-default-rtdb.firebaseio.com",
+    "project_id": "online-addmission-5d57d",
+    "storage_bucket": "online-addmission-5d57d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600392066710:android:5bb1a04abed2d0b72c84b7",
+        "android_client_info": {
+          "package_name": "com.example.admissionexamform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFDMPAAF5f8N13ENCTRvrzgYTEH90K318"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

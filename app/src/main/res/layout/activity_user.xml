@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_User"
+    android:background="@color/colorLoginBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/ivCollegeLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvcollegename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SB Jain Institute\nof Technology Management and Researc"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ivCollegeLogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvcollegename">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAdmission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admission\nForm"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/colorLoginButton"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exam\nForm"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/colorLoginButton"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBacklock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Backlog\nForm"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/colorLoginButton"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

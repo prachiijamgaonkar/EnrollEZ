@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Admission_Page2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvadpagetwo_approvalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvadpagetwo_approvalinfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Village / City"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_VillageCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Reservation Information Section"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State of Domicile"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_StateDomicile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cast (As per TC)"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_Cast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Caste"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_SubCaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Scholership Details"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kindly fill the following details as per previous year Scholarship"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Previous Year Number"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scholarship / Freeship / Minority / EBC Number"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_PreviousYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parent's / Guardian's Profession"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_ParentProfession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parent's / Guardian's Annual Income in Rs."
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_AnnualIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Bank"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_BankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_Branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account No."
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_AccountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IFSC Code"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_ifsccode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MICR Code"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_micrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Academic progress Details"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10th Percentage"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etad_10thpercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12th Percentage"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etad_12thpercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Diploma Percentage"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etad_diplomapercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Degree Percentage"
+                        android:textSize="20sp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/etad_degreepercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_weight="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <LinearLayout
+                    android:id="@+id/rlad_FirstSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_firstsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_firstsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_firstsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_firstsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_firstsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_firstsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlad_SecondSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Second Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_secondsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_secondsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_secondsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_secondsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_secondsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_secondsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlad_ThirdSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Third Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_thirdsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_thirdsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_thirdsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_thirdsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_thirdsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_thirdsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlad_FourthSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fourth Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_fourthsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fourthsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fourthsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fourthsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fourthsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fourthsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlad_FifthSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fifth Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_fifthsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fifthsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fifthsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_weight="0.7"
+                            android:inputType="number"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fifthsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fifthsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_fifthsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_weight="0.7"
+                            android:inputType="number"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlad_SixthSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sixth Semester"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pass / ATKT"
+                            android:textSize="20sp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spiad_sixthsem_passatkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:layout_weight="0.7"
+                            android:background="?attr/editTextBackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks Obtained"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_sixthsem_marksobtained"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_sixthsem_totalmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="% of Marks"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_sixthsem_perofmarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SGPA"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_sixthsem_sgpa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Number of Backlog Subjects"
+                            android:textSize="20sp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/etad_sixthsem_numofsubjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:layout_weight="0.7"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnad_Submit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

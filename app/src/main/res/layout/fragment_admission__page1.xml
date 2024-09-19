@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Admission_Page1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvadpageone_approvalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvadpageone_approvalinfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admission Year"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvad_AdmissionYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2023-24"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Year"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_AdmissionYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type of Seat"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_TypeOfSeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course in Which Admitted"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/etad_WhichAdmitted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admission Category"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_admissioncategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CAP Application ID"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_ApplicationId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Residential Status"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_residentialstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Candidate Belongs to"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_candidatebelongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Time Admission Details"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_admissiondetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year of Admission"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_yearofadmission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Admission"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tvad_dateofadmission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Personal Information Section"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorOdd"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Student"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_nameofstudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Father's Full Name"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_fathersname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mother's Full Name"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_mothersname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tvad_dateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rdad_radioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spiad_bloodgropu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="?attr/editTextBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Place of Birth"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_placeofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nationality"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_Nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Religion"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_Religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Addhar No."
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_Addharno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College Registration No."
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etad_CollegeRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnad_Submit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

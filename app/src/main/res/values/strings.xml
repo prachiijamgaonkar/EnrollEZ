@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EnrollEZ</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="declaration_by_student">I hereby declare that, I have read all the rules related to the admission and the information filled in by me in this form is correct and true to the best of my knowledge. I will be responsible for any discrepancy, arising t of the form signed by me.</string>
+
+    <string name="string1">1) The information furnished by my ward in this application form is correct to the best of my knowledge.</string>
+    <string name="string2">2) I undertake the responsibility to pay fees and applicable charges to the college on the due date and in the event of failure, the principal of the institute may take action against my ward as he may deem fit.</string>
+    <string name="string3">3) I have read all the rules of admission and rules of college and declaration of my son/daughter/ward above and I undertake to ensure that my ward will abide by the rules and regulations of the college to the satisfaction of the principal. I also accept responsibility for inquiring periodically about the attendance and progress of my son/daughter/ward.</string>
+    <string name="string4">4) I undertake that my ward has read and understood all the Academic Rules and Regulations of the Institute as applicable to him/her and declare that he/she shall strictly abide by the same.</string>
+    <string name="string5">5) On cancellation of admission of my ward, I am liable to pay full fees to the institute if the seat remains vacant. </string>
+    <string name="string6">6) I also declare that any action taken by the principal for any infringement of the rules of Conduct, Discipline &amp; attendance will be accepted by me.</string>
+    <string name="string7">7) The admission given to my ward is provisional and subject to approval from DTE, State CET Cell &amp; RTM Nagpur University/Admissions Regulating Authority, M.S., Mumbai.</string>
+    <string name="string8">8) I hereby agree that the fee paid is interim &amp; might increase as per the direction of Fees Regulating Authority, M.S., Mumbai for the year 2023-2024 onwards.</string>
+    <string name="string9">9) I hereby declare that I shall pay the balance fee whenever the fee is hiked by Fees Regulating Authority, M.S., Mumbai.</string>
+    <string name="string10">I, the undersigned is a student of S. B. Jain Institute of Technology, Management &amp; Research, Nagpur hereby agree to abide by the academic rules and regulations of this institute. I am fully aware that I must have an overall 75% attendance of the total number of classes including lectures/ tutorials and practicals for appearing in the end semester examination.</string>
+</resources>

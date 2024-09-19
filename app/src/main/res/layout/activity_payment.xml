@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Payment">
+
+    <TextView
+        android:id="@+id/tvPaymentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="?attr/editTextBackground"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPaymentHistory">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Details"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/colorOdd"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Name \n Union Bank"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account No. \n 669202010013904"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IFSC Code \n UBIN0566926"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etBankTransactionID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Transaction ID"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBankDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/colorOdd"
+                android:layout_marginTop="30dp"/>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/qrcode"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etQRTransactionID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Transaction ID"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/colorOdd"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCashPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Will Cash Paid"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
